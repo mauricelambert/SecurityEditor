@@ -1,0 +1,144 @@
+{
+    "general" : {
+        "default_theme" : "Sombre",
+        "use_theme" : true,
+        "default_file_name" : "Untitle",
+        "encodings" : ["utf_8", "cp850", "cp1250", "cp1252", "iso-8859-2", "latin1"]
+    },
+
+    "font" : {
+        "normal" : ["ubuntu", 12, "normal"],
+        "string" : ["ubuntu", 12, "italic"],
+        "interface" : ["ubuntu", 14, "normal"]
+    },
+
+    "color" : {
+        "background_text" : "RoyalBlue1",
+        "background_interface" : "SlateBlue1",
+        "text_normal" : "blue4",
+        "text_interface" : "navy"
+    },
+
+    "execution" : {
+        ".py" : ["C:\\Program Files (x86)\\Python38-32\\python.exe"],
+        ".pyw" : ["C:\\Program Files (x86)\\Python38-32\\pythonw.exe"],
+        ".js" : ["C:\\Program Files\\nodejs\\node.js"]
+    },
+
+    "syntax" : {
+        
+        "default" : {
+            "STRING" : { "FONT" : ["ubuntu", 12, "italic"], "COLOR" : "OrangeRed2" },
+            "FIND" : { "FONT" : ["ubuntu", 14, "bold"], "COLOR" : "red", "BACKGROUNDCOLOR" : "blue" },
+            "SPECIAL" : { "FONT" : ["ubuntu", 12, "bold"], "COLOR" : "gold" }
+        },
+
+        "hex_default" : {
+            "ASCII" : { "FONT" : ["@MS Gothic", 12, "normal"], "COLOR" : "lawn green" },
+            "SEPARATOR" : { "FONT" : ["@MS Gothic", 12, "bold"], "COLOR" : "gold" },
+            "HEXA" : { "FONT" : ["@MS Gothic", 12, "normal"], "COLOR" : "lime green" },
+            "INDEX" : { "FONT" : ["@MS Gothic", 12, "bold"], "COLOR" : "forest green" }
+        },
+
+        "python_default" : {
+            "KEYWORD" : { "FONT" : ["ubuntu", 12, "bold"], "COLOR" : "tomato" },
+            "BUILTIN" : { "FONT" : ["ubuntu", 12, "bold"], "COLOR" : "dark orange" },
+            "COMMENT" : { "FONT" : ["ubuntu", 12, "normal"], "COLOR" : "chocolate3" }
+        },
+
+        ".py" : {
+            "OPERATOR" : { 
+                "VALUES" : ["=", "\\+", "\\*", "/", "%", "\\<", "\\>", "\\&", "\\|", "\\^", "-"],
+                "COLOR" : "goldenrod1",
+                "FONT" : ["ubuntu", 12, "normal"]
+            },
+            
+            "NUMBERS" : {
+                "VALUES" : ["[0-9]{1,}\\b", "0x[0-9a-fA-F]{1,}\\b", "\\\\x[0-9a-fA-F]{1,}\\b"],
+                "COLOR" : "red",
+                "FONT" : ["ubuntu", 12, "normal"]
+            },
+
+            "CONSTANTE" : {
+                "VALUES" : ["[A-Z]{1,}\\b"],
+                "COLOR" : "firebrick1",
+                "FONT" : ["ubuntu", 12, "normal"]
+            }
+        },
+
+        ".js" : {
+            "KEYWORDS" : {
+                "VALUES" : ["abstract\\b", "arguments\\b", "await\\b", "boolean\\b", "break\\b", "byte\\b", "case\\b", "catch\\b", 
+                    "char\\b", "class\\b", "const\\b",   
+                    "continue\\b", "debugger\\b", "default\\b", "delete\\b", "do\\b", "double\\b", "else\\b", "enum\\b", "eval\\b", 
+                    "export\\b", "extends\\b",
+                    "false\\b", "final\\b", "finally\\b", "float\\b", "for\\b", "function\\b", "goto\\b", "if\\b", "implements\\b", 
+                    "import\\b", "in\\b", "instanceof\\b", 
+                    "int\\b", "interface\\b", "let\\b", "long\\b", "native\\b", "new\\b", "null\\b", "package\\b", "private\\b", 
+                    "protected\\b", "public\\b", "return\\b", 
+                    "short\\b", "static\\b", "super\\b", "switch\\b", "synchronized\\b", "this\\b", "throw\\b", "throws\\b", "transient\\b", 
+                    "true\\b", "try\\b", 
+                    "typeof\\b", "var\\b", "void\\b", "volatile\\b", "while\\b", "with\\b", "yield\\b"],
+                "COLOR" : "#FFaa99",
+                "FONT" : ["Caladea", 10, "normal"]
+            }
+        },
+
+        ".php" : {
+            "CLASSES" : {
+                "VALUES" : ["ArithmeticError\\b", "AssertionError\\b", "DivisionByZeroError\\b", "Error\\b", "Throwable\\b", 
+                    "ParseError\\b",
+                    "TypeError\\b"],
+                "COLOR" : "#ff0000",
+                "FONT" : ["Consolas", 12, "bold"]
+            },
+            "CONSTANTES" : {
+                "VALUES" : ["__CLASS__\\b", "__DIR__\\b", "__FILE__\\b", "__FUNCTION__\\b", "__LINE__\\b", "__METHOD__\\b", 
+                    "__NAMESPACE__\\b", 
+                    "__TRAIT__\\b"],
+                "COLOR" : "#00ff00",
+                "FONT" : ["Consolas", 12, "bold"]
+            },
+            "FUNCTIONS" : {
+                "VALUES" : ["__halt_compiler\\b", "abstract\\b", "and\\b", "array\\b", "as\\b", "break\\b", "callable\\b", 
+                    "case\\b", "catch\\b", 
+                    "class\\b", "clone\\b", "const\\b", "continue\\b", "declare\\b", "default\\b", "die\\b", "do\\b", "echo\\b", 
+                    "else\\b", "elseif\\b", 
+                    "empty\\b", "enddeclare\\b", "endfor\\b", "endforeach\\b", "endif\\b", "endswitch\\b", "endwhile\\b", "eval\\b", 
+                    "exit\\b", 
+                    "extends\\b", "final\\b", "for\\b", "foreach\\b", "function\\b", "global\\b", "goto\\b", "if\\b", "implements\\b", 
+                    "include\\b", 
+                    "include_once\\b", "instanceof\\b", "insteadof\\b", "interface\\b", "isset\\b", "list\\b", "namespace\\b", "new\\b", 
+                    "or\\b", 
+                    "print\\b", "private\\b", "protected\\b", "public\\b", "require\\b", "require_once\\b", "return\\b", "static\\b", 
+                    "switch\\b", 
+                    "throw\\b", "trait\\b", "try\\b", "unset\\b", "use\\b", "var\\b", "while\\b", "xor\\b"],
+                "COLOR" : "#00ff00",
+                "FONT" : ["Consolas", 12, "bold"]
+            },
+            "VALUES" : {
+                "VALUES" : ["TRUE\\b", "FALSE\\b", "NULL\\b", "int\\b", "float\\b", "bool\\b", "string\\b", "true\\b", "false\\b", 
+                    "null\\b", "void\\b", 
+                    "iterable\\b", "object\\b"],
+                "COLOR" : "#777700",
+                "FONT" : ["Consolas", 12, "bold"]
+            }
+        },    
+        
+        ".rb" : {
+            "KEYWORDS" : {
+                "VALUES" : [
+                    "BEGIN\\b", "END\\b", "alias\\b", "and\\b", "begin\\b", "break\\b",
+                    "case\\b", "class\\b", "def\\b", "defined\\b", "do\\b", "else\\b", "elsif\\b", "end\\b", "ensure\\b", "false\\b", 
+                    "for\\b", "if\\b", "in\\b",
+                    "module\\b", "next\\b", "nil\\b", "not\\b", "or\\b", "redo\\b", "rescue\\b", "retry\\b", "return\\b", "self\\b", 
+                    "super\\b", "then\\b", "true\\b", 
+                    "undef\\b", "unless\\b", "until\\b", "when\\b", "while\\b", "yield\\b", "__ENCODING__\\b", "__END__\\b", 
+                    "__FILE__\\b", "__LINE__\\b"
+                ],
+                "COLOR" : "#77ff77",
+                "FONT" : ["Consolas", 12, "bold"]
+            }
+        }
+    }
+}
